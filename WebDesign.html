@@ -13,7 +13,7 @@
             Logo
         </div>
 
-        <div class="flex ">
+        <div class="hidden lg:flex items-center ">
             <ul class="flex items-center gap-5 ">
                 <li class="hover:text-grass transition-all duration-300 ease-in-out"><a href="">AI Agents</a></li>
                 <li class="hover:text-grass transition-all duration-300 ease-in-out"><a href="">Industries</a></li>
@@ -27,24 +27,79 @@
             </div>
         </div>
         
+        <button id="menu-btn" class="lg:hidden flex justify-center flex-col gap-1">
+            
+                <span class="block w-6 h-0.5 bg-black "></span>
+                <span class="block w-6 h-0.5 bg-black"></span>
+                <span class="block w-6 h-0.5 bg-black"></span>
+            
+        </button>
+
     </nav>
 
+    <div id="menu" class=" hidden max-w-6xl mx-auto bg-white shadow-xl rounded-lg mt-2 p-4 lg:hidden">
+        <ul class="flex flex-col gap-4">
+            <li class="hover:text-grass transition-all duration-300 ease-in-out"><a href="">AI Agents</a></li>
+            <li class="hover:text-grass transition-all duration-300 ease-in-out"><a href="">Industries</a></li>
+            <li class="hover:text-grass transition-all duration-300 ease-in-out"><a href="">Pricing Resources</a></li>
+            <li class="hover:text-grass transition-all duration-300 ease-in-out"><a href="">About</a></li>
+        </ul>
+
+         <div class="mt-4 flex flex-col gap-2">
+            <button class="bg-black text-white h-10 rounded-lg hover:bg-grass/80 transition-all duration-300 ease-in-out">Sign Up</button>
+            <button class="border-2 h-10 rounded-lg hover:border-grass hover:text-grass transition-all duration-300 ease-in-out">Log In</button>
+        </div>
+
+    </div>
+
     <section class="mt-30 max-w-6xl mx-auto ">
-           <div class="flex justify-between items-center" >
-            <div>
-             <h1 class="font-bold text-3xl">Make Your Brand</h1>
-             <h1 class="font-bold text-3xl">Discoverable</h1>
-             <h1 class="font-bold text-5xl">Everywhere</h1>
+           <div class="flex flex-col md:flex-row justify-between items-center" >
+                    <div>
+                    <h1 class="font-bold text-2xl md:text-3xl text-center">Make Your Brand Discoverable</h1>
+                    
+                    <h1 class="font-bold text-5xl md:text-5xl text-center">Everywhere</h1>
 
-             <p class="mt-10 text-lg">Qvery's AI Agents help marketers measure and <br> grow brand visibility on the web</p>
+                    <p class="mt-10 text-lg text-center">Qvery's AI Agents help marketers measure and grow brand visibility on the web</p>
 
-             <button class="bg-black text-white hover:bg-grass transition-all duration-300 ease-in-out w-25 h-10 rounded-lg mt-3 ">Get a Demo </button>
-             <button class="w-25 h-15 mx-3 hover:text-grass transition-all duration-300 ease-in-out">Login ></button>
-            </div>
-            <div>
-                <p class=" flex justify-center shadow-xl w-100 h-100 text-gray-900/70 text-bold items-center rounded-lg">Image Holder</p>
-            </div>
+                    <div class="flex justify-center gap-3 mt-3">
+                        <button class="bg-black text-white w-24 h-10 rounded-lg hover:bg-grass transition-all duration-300 ease-in-out">Get a Demo</button>
+                        <button class="w-24 h-10 hover:text-grass transition-all duration-300 ease-in-out">Login ></button>
+                    </div>
+                    </div>
+                <div class="hidden md:block"> 
+                    <p class=" flex justify-center shadow-xl w-100 h-100 text-gray-900/70 text-bold items-center rounded-lg">Image Holder</p>
+                </div>
            </div> 
     </section>
+
+
+    <section class="mt-30 max-w-6xl mx-auto flex flex-col items-center">
+        <p class="font-bold text-lg text-center ">50% of traditional search traffic will be replaced with generative AI by 2028</p>
+        <p class="text-sm text-center mt-3">By Gartner</p>
+
+        <div class=" flex flex-col mt-5 border-2 border-gray-300/30 shadow-lg w-full max-w-xl transition-all duration-300 hover:scale-105 p-10  rounded-lg">
+           <div class="flex items-center">
+                <span class="w-10 h-10 bg-cyan-300 block rounded-full"></span>
+                <p class="mx-5 font-bold">Vlad Shvets, CEO @ Quvery</p>
+            </div> 
+            <p class="mt-10" >
+              This is an understatement. By 2028, 100% of search traffic will be driven by AI search engines. We built Qvery to help you win in this new era.  
+            </p>
+        </div>
+
+    </section>
+
+
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+
+        btn.addEventListener('click',() => {
+            menu.classList.toggle('hidden');
+
+        });
+    </script>
 </body>
 </html>

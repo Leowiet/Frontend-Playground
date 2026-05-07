@@ -6,7 +6,7 @@
     <title>Webpage Design Tailwind</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="p-5 bg-gray-50">
+<body class="p-10 bg-gray-50">
 
     <nav class="mt-5 max-w-6xl mx-auto flex justify-between p-3  w-full bg-white shadow-xl rounded-lg ">
         <div class="font-bold text-3xl">
@@ -17,7 +17,7 @@
             <ul class="flex items-center gap-5 ">
                 <li class="hover:text-grass transition-all duration-300 ease-in-out"><a href="">AI Agents</a></li>
                 <li class="hover:text-grass transition-all duration-300 ease-in-out"><a href="">Industries</a></li>
-                <li class="hover:text-grass transition-all duration-300 ease-in-out"><a href="">Pricing Resources</a></li>
+                <li class="hover:text-grass transition-all duration-300 ease-in-out"><a href="">Pricing Resources</a></li> hover:text-grass
                 <li class="hover:text-grass transition-all duration-300 ease-in-out"><a href="">About</a></li>
             </ul>
 
@@ -102,15 +102,15 @@
 
     </section>
 
-    <section class="mt-20 max-w-6xl mx-auto flex flex-col ">
+    <section class="mt-20 max-w-6xl mx-auto flex flex-col md:flex-row ">
 
         
-        <div class="order-2">
+        <div class="order-2 md:order-1 md:flex md:flex-col md:justify-center" >
             <p class="text-3xl font-bold">Your AI Visibility Agent</p>
-            <p class="mt-3 opacity-75">AI Engine Researcher is an autonomous AI agent. Add yout brand, and it does the rest: generating topics, running daily research across ChatGPT and Google AI Mode, and tracking your brand visibility in 200+ countries. All on autopilot.</p>
+            <p class="mt-3 opacity-75 ">AI Engine Researcher is an autonomous AI agent. Add yout brand, and it does the rest: generating topics, running daily research across ChatGPT and Google AI Mode, and tracking your brand visibility in 200+ countries. All on autopilot.</p>
         </div>
 
-        <div class="mb-24 order-1">
+        <div class="mb-24 order-1 md:order-2 md:flex md:flex-col md:justify-center md:ml-3">
             <p class="flex justify-center shadow-xl w-100 h-100 text-gray-900/70 text-bold items-center rounded-lg mx-auto">Image Holder</p>
         </div>
 
@@ -118,13 +118,13 @@
     </section>
 
 
-    <section class="mt-20 max-w-6xl mx-auto flex flex-col ">
+    <section class="mt-20 max-w-6xl mx-auto flex flex-col md:flex-row ">
 
-        <div class="mb-24 ">
+        <div class="mb-24 md:flex md:flex-col md:justify-center ">
             <p class="flex justify-center shadow-xl w-100 h-100 text-gray-900/70 text-bold items-center rounded-lg mx-auto">Image Holder</p>
         </div>
 
-        <div class="">
+        <div class="md:ml-3 md:flex md:flex-col md:justify-center">
             <p class="text-3xl font-bold">Auto-Generated Topics & Queries</p>
             <p class="mt-3 opacity-75">No manual setup. Qvery generates your topics and quries automatically from your brand data Makeany tweaks you'd like, and then watch them run daily across ChatGPT and Google AI Mode.</p>
         </div>
@@ -135,14 +135,14 @@
     </section>
 
 
-    <section class="mt-20 max-w-6xl mx-auto flex flex-col ">
+    <section class="mt-20 max-w-6xl mx-auto flex flex-col md:flex-row ">
 
-        <div class="order-2">
+        <div class="order-2 md:order-1 md:flex md:flex-col md:justify-center mr-3">
             <p class="text-3xl font-bold">Real-World Output & Citiations</p>
             <p class="mt-3 opacity-75">Qvery captures every Citiationsfrom every AI engine response. You see exactly which sources get recommended, which competitors show up, and which citations you need to win to grow your brand visibility.</p>
         </div>
 
-        <div class="mb-24 order-1 ">
+        <div class="mb-24 order-1 md:order-2 md:flex md:flex-col md:justify-center">
             <p class="flex justify-center shadow-xl w-100 h-100 text-gray-900/70 text-bold items-center rounded-lg mx-auto">Image Holder</p>
         </div>
 
@@ -152,14 +152,14 @@
     </section>
 
 
-    <section class="mt-20 max-w-6xl mx-auto flex flex-col ">
+    <section class="mt-20 max-w-6xl mx-auto flex flex-col md:flex-row ">
 
-         <div class="mb-24 ">
+         <div class="mb-24 md:flex md:flex-col md:justify-center">
             <p class="flex justify-center shadow-xl w-100 h-100 text-gray-900/70 text-bold items-center rounded-lg mx-auto">Image Holder</p>
         </div>
         
 
-        <div class="">
+        <div class="md:flex md:flex-col md:justify-center ml-3">
             <p class="text-3xl font-bold">Measure, Compare, Then Grow</p>
             <p class="mt-3 opacity-75">Every AI response we log feeds  Qvery's analytics engine. From that data, we surface insights and metrics: Visibility, Share of Voice, Sentiment, and more.</p>
         </div>
@@ -236,8 +236,8 @@
     </section>
 
     <section class="mt-20">
-        <div class="grid grid-cols-2 gap-6 px-4">
-            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col ">
+        <div class="grid grid-cols-2 gap-6 px-4 p-0 lg:grid-cols-5">
+            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col  lg:max-w-sm">
                 
                 <div>
                     <p class="flex justify-center shadow-xl w-30 h-30 text-gray-900/70 text-bold  items-center rounded-lg ">Image Holder</p>
@@ -245,11 +245,11 @@
 
                 <div class="mt-4">
                     <p class="font-bold text-xl mt-3"> Travel</p>
-                    <p class="text-base font-semibold mt-1">Learn More > </p>
+                    <p class="text-base font-semibold mt-1 hover:text-grass transation-all duration-300 ease-in-out">Learn More > </p>
                 </div>
             </div>
 
-            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col ">
+            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col md:max-w-sm ">
                 
                 <div>
                     <p class="flex justify-center shadow-xl w-30 h-30 text-gray-900/70 text-bold  items-center rounded-lg ">Image Holder</p>
@@ -257,12 +257,12 @@
 
                 <div class="mt-4">
                     <p class="font-bold text-xl mt-3"> Ecommerce</p>
-                    <p class="text-base font-semibold mt-1">Learn More > </p>
+                    <p class="text-base font-semibold mt-1 hover:text-grass transation-all duration-300 ease-in-out">Learn More > </p>
                 </div>
             </div>
 
 
-            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col ">
+            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col md:max-w-sm">
                 
                 <div>
                     <p class="flex justify-center shadow-xl w-30 h-30 text-gray-900/70 text-bold  items-center rounded-lg ">Image Holder</p>
@@ -270,11 +270,11 @@
 
                 <div class="mt-4">
                     <p class="font-bold text-xl mt-3"> Finance</p>
-                    <p class="text-base font-semibold mt-1">Learn More > </p>
+                    <p class="text-base font-semibold mt-1 hover:text-grass transation-all duration-300 ease-in-out">Learn More > </p>
                 </div>
             </div>
 
-            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col ">
+            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col md:max-w-sm">
                 
                 <div>
                     <p class="flex justify-center shadow-xl w-30 h-30 text-gray-900/70 text-bold  items-center rounded-lg ">Image Holder</p>
@@ -282,11 +282,11 @@
 
                 <div class="mt-4">
                     <p class="font-bold text-xl mt-3"> Healthcare</p>
-                    <p class="text-base font-semibold mt-1">Learn More > </p>
+                    <p class="text-base font-semibold mt-1 hover:text-grass transation-all duration-300 ease-in-out">Learn More > </p>
                 </div>
             </div>
 
-            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col ">
+            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col md:max-w-sm">
                 
                 <div>
                     <p class="flex justify-center shadow-xl w-30 h-30 text-gray-900/70 text-bold  items-center rounded-lg ">Image Holder</p>
@@ -294,11 +294,11 @@
 
                 <div class="mt-4">
                     <p class="font-bold text-xl mt-3"> Automotive</p>
-                    <p class="text-base font-semibold mt-1">Learn More > </p>
+                    <p class="text-base font-semibold mt-1 hover:text-grass transation-all duration-300 ease-in-out">Learn More > </p>
                 </div>
             </div>
 
-            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col ">
+            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col md:max-w-sm ">
                 
                 <div>
                     <p class="flex justify-center shadow-xl w-30 h-30 text-gray-900/70 text-bold  items-center rounded-lg ">Image Holder</p>
@@ -306,11 +306,11 @@
 
                 <div class="mt-4">
                     <p class="font-bold text-xl mt-3"> Education</p>
-                    <p class="text-base font-semibold mt-1">Learn More > </p>
+                    <p class="text-base font-semibold mt-1 hover:text-grass transation-all duration-300 ease-in-out">Learn More > </p>
                 </div>
             </div>
 
-            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col ">
+            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col md:max-w-sm ">
                 
                 <div>
                     <p class="flex justify-center shadow-xl w-30 h-30 text-gray-900/70 text-bold  items-center rounded-lg ">Image Holder</p>
@@ -318,11 +318,11 @@
 
                 <div class="mt-4">
                     <p class="font-bold text-xl mt-3"> Real Estate</p>
-                    <p class="text-base font-semibold mt-1">Learn More > </p>
+                    <p class="text-base font-semibold mt-1 hover:text-grass transation-all duration-300 ease-in-out">Learn More > </p>
                 </div>
             </div>
 
-            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col ">
+            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col md:max-w-sm">
                 
                 <div>
                     <p class="flex justify-center shadow-xl w-30 h-30 text-gray-900/70 text-bold  items-center rounded-lg ">Image Holder</p>
@@ -330,11 +330,11 @@
 
                 <div class="mt-4">
                     <p class="font-bold text-xl mt-3"> Legal</p>
-                    <p class="text-base font-semibold mt-1">Learn More > </p>
+                    <p class="text-base font-semibold mt-1 hover:text-grass transation-all duration-300 ease-in-out">Learn More > </p>
                 </div>
             </div>
 
-            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col ">
+            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col md:max-w-sm">
                 
                 <div>
                     <p class="flex justify-center shadow-xl w-30 h-30 text-gray-900/70 text-bold  items-center rounded-lg ">Image Holder</p>
@@ -342,11 +342,11 @@
 
                 <div class="mt-4">
                     <p class="font-bold text-xl mt-3"> Saas</p>
-                    <p class="text-base font-semibold mt-1">Learn More > </p>
+                    <p class="text-base font-semibold mt-1 hover:text-grass transation-all duration-300 ease-in-out">Learn More > </p>
                 </div>
             </div>
 
-            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col ">
+            <div class="border-5 border-white rounded-xl p-4 min-h-[220px] flex flex-col md:max-w-sm">
                 
                 <div>
                     <p class="flex justify-center shadow-xl w-30 h-30 text-gray-900/70 text-bold  items-center rounded-lg ">Image Holder</p>
@@ -354,11 +354,144 @@
 
                 <div class="mt-4">
                     <p class="font-bold text-xl mt-3"> Crypto</p>
-                    <p class="text-base font-semibold mt-1">Learn More > </p>
+                    <p class="text-base font-semibold mt-1 hover:text-grass transation-all duration-300 ease-in-out">Learn More > </p>
                 </div>
             </div>
             
             
+
+        </div>
+    </section>
+
+
+
+    <section class="mt-20">
+    <p class="font-bold text-center text-4xl">Read The FAQs<span class="text-red-300">.</span></p>
+
+
+        <div class="mt-10 grid md:grid-cols-2 md:gap-3">
+
+            <div class="mt-5">
+            
+                <div class="flex justify-between items-center">
+                    <p class="text-lg">What is Qvery?</p>
+                    <span> + </span>
+                    
+                </div>
+
+                <hr class="mt-5 text-gray-900">
+            </div>
+
+            <div class="mt-5">
+            
+                <div class="flex justify-between items-center">
+                    <p class="text-lg">Who is Qvery for?</p>
+                    <span> + </span>
+                    
+                </div>
+
+                <hr class="mt-5 text-gray-900">
+            </div>
+
+            <div class="mt-5">
+            
+                <div class="flex justify-between items-center">
+                    <p class="text-lg">What is AI Engine Researcher?</p>
+                    <span> + </span>
+                    
+                </div>
+
+                <hr class="mt-5 text-gray-900">
+            </div>
+
+            <div class="mt-5">
+            
+                <div class="flex justify-between items-center">
+                    <p class="text-lg">How is Qvery different from other tools?</p>
+                    <span> + </span>
+                    
+                </div>
+
+                <hr class="mt-5 text-gray-900">
+            </div>
+
+            <div class="mt-5">
+            
+                <div class="flex justify-between items-center">
+                    <p class="text-lg">What is Qvery's roadmap and long-term vision?</p>
+                    <span> + </span>
+                    
+                </div>
+
+                <hr class="mt-5 text-gray-900">
+            </div>
+
+            <div class="mt-5">
+            
+                <div class="flex justify-between items-center">
+                    <p class="text-lg">Which AI engines does Qvery suppot?</p>
+                    <span> + </span>
+                    
+                </div>
+
+                <hr class="mt-5 text-gray-900">
+            </div>
+
+
+            <div class="mt-5">
+            
+                <div class="flex justify-between items-center">
+                    <p class="text-lg">How do topics and queries work in Qvery?</p>
+                    <span> + </span>
+                    
+                </div>
+
+                <hr class="mt-5 text-gray-900">
+            </div>
+
+            <div class="mt-5">
+            
+                <div class="flex justify-between items-center">
+                    <p class="text-lg">How does Qvery generate queries?</p>
+                    <span> + </span>
+                    
+                </div>
+
+                <hr class="mt-5 text-gray-900">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="mt-30 bg-darkgrass p-5 rounded-xl">
+        <div class="flex flex-col md:flex-row md:justify-between">
+            <div>
+                <div class="flex items-center">
+                    <p class="w-10 h-10 rounded-full bg-grass "></p>
+                    <p class="text-3xl text-white mx-3">Qvery</p>
+                </div>
+
+                <p class="text-white text-base mt-3">Measure & grow your AI engine visibility</p>
+             </div>
+                <div class="flex mt-5">
+                    <p class="w-8 h-8 rounded-full bg-white mr-3 "></p>
+                    <p class="w-8 h-8 rounded-full bg-white mx-3 "></p>
+                    <p class="w-8 h-8 rounded-full bg-white mx-3 "></p>
+                </div>
+        </div>
+
+        <div class="mt-10 md:flex md:items-center md:justify-between ">
+            <div class="order-2">
+                <ul class="flex flex-col md:flex-row ">
+                    <li class="text-white my-1 md:mx-2"><a href="">Privacy Policy</a></li>
+                    <li class="text-white my-1 md:mx-2"><a href="">Terms & Conditions</a></li>
+                    <li class="text-white my-1 md:mx-2"><a href="">Cookie Policy</a></li>
+                    <li class="text-white my-1 md:mx-2"><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <p class="text-white mt-3 order-1">@ 2026 Qvery AI OU</p>
 
         </div>
     </section>
